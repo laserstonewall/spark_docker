@@ -1,0 +1,8 @@
+name: sparkenv
+channels:
+        - defaults
+dependencies:
+        - python=3.7
+        - pandas
+        - numpy
+        - ipython
