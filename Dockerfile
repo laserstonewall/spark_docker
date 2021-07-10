@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Chris Morris
+LABEL maintainer="morris.chris.m@gmail.com"
 
 RUN apt update
 RUN apt install -y default-jre wget bzip2 ca-certificates curl git iproute2 rsync

@@ -8,6 +8,19 @@ Currently starting up two containers: a master and worker.
 
 Using the Spark standalone deployment.
 
+## Downloads
+
+In order to load Spark and Hadoop into the containers, you must download.
+
+Spark:
+```
+wget https://archive.apache.org/dist/spark/spark-3.0.0/spark-3.0.0-bin-hadoop2.7.tgz
+```
+Hadoop:
+```
+wget https://archive.apache.org/dist/hadoop/common/hadoop-2.7.7/hadoop-2.7.7.tar.gz
+```
+
 ## Dockerfile
 
 We start with the base Ubuntu 18.04 image. We run `apt update` to get the latest repository information, then add a few necessary dependencies like Java.

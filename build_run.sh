@@ -1,6 +1,7 @@
 #/bin/bash
 
 # Build from the Dockerfile if changes have been made
+docker pull ubuntu:18.04
 docker build -t ubuntu_spark:latest .
 
 # Start up the container that will function as the master node
