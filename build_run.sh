@@ -33,7 +33,7 @@ docker run \
 docker exec -ti spark-worker1 start-slave.sh spark://172.17.0.2:7077 -p 9001 -h sparkworker1
 
 # Start the DNS server allowing workers to communicate
-docker run --rm -d --hostname dns.mageddo --name dns-proxy-server -p 5380:5380 \                                 ✔ 
+docker run --rm -d --hostname dns.mageddo --name dns-proxy-server -p 5380:5380 \
   -v /opt/dns-proxy-server/conf:/app/conf \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /etc/resolv.conf:/etc/resolv.conf \
